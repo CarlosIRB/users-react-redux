@@ -1,0 +1,84 @@
+/* General reset and base styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-color: #333;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Centra los items horizontalmente dentro de la lista */
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+  color: #ddd;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Button styles */
+button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #e74c3c; /* Red for logout */
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(231, 76, 60, 0.6); /* Focus ring with subtle red */
+}
+
+/* Container and content */
+.container {
+  padding: 2rem;
+  margin: auto;
+}
